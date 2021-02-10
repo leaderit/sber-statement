@@ -1,0 +1,16 @@
+{
+  "name": "sber-statement",
+  "version": "1.0.0",
+  "description": "Sberbank Statements downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valeriy Grazhdankin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "imap": "^0.8.19"
+  }
+}

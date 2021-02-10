@@ -1,0 +1,6 @@
+IMAP_SERVER=imap.server.com
+IMAP_PORT=993
+IMAP_TLS=true
+IMAP_USER=finance@mail.com
+IMAP_PASSWORD=bigbigpassword
+SLEEP=3600

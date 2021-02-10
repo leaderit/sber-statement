@@ -1,0 +1,20 @@
+version: '3.6'
+services:
+  # NODEJS SERVICE 
+  sber:
+    container_name: sber-statement
+    build: 
+      context: .
+    restart: always
+    volumes:
+    - ./stat:/app/statements
+    environment:
+      NODE_ENV: production
+      # Параметры почтового сервера
+      IMAP_SERVER: ${IMAP_SERVER}
+      IMAP_PORT: ${IMAP_PORT}
+      IMAP_TLS: ${IMAP_TLS}
+      IMAP_USER: ${IMAP_USER}
+      IMAP_PASSWORD: ${IMAP_PASSWORD}
+      SLEEP: ${SLEEP}      
+
